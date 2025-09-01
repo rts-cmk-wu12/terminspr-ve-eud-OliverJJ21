@@ -1,0 +1,34 @@
+@use "../../fonts.scss";
+@use "../../variables.scss";
+@use "../../animation.scss";
+
+.intro {
+    &-container {
+        background-image: url("../../../public/images/splash-image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    &-logo {
+        position: absolute;
+        top: 25rem;
+    }
+
+    &__btncontainer {
+        position: absolute;
+        bottom: 5rem;
+        margin-left: 4rem;
+        z-index: 1;
+        &-btn {
+            animation: slideIn 1.5s;
+            font-family: "Ubuntu", sans-serif;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 10px;
+            padding: 1em 5em;
+            color: white;
+            background-color: variables.$background-color;
+        }
+    }
+}
