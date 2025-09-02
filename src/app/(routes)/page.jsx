@@ -13,7 +13,7 @@ export default function Home() {
           <Image src={SplashText} alt="" priority></Image>
         </div>
         <div className='intro__btncontainer'>
-          <Link href="/loginpage" className='intro__btncontainer-btn'>Kom i gang</Link>
+          <Link href="/activitiespage" className='intro__btncontainer-btn'>Kom i gang</Link>
         </div>
       </div>
     </>

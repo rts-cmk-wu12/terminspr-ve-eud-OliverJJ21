@@ -10,13 +10,13 @@ export default function DrawerMenu() {
             <nav className="navbar">
                 <div className='navbar-container'>
                     <div className='navbar-icons'>
-                        <Link className='/activitiespage' href="/">
+                        <Link className='link' href="/activitiespage">
                             <LuHouse />
                         </Link>
-                        <Link className='/searchpage' href="/">
+                        <Link className='link' href="/searchpage">
                             <IoSearch />
                         </Link>
-                        <Link className='/calendarpage' href="/">
+                        <Link className='link' href="/calendarpage">
                             <FiCalendar />
                         </Link>
                     </div>

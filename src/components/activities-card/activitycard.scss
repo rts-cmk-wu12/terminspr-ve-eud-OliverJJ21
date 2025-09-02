@@ -1,0 +1,23 @@
+@use "../../variables";
+@use "../../fonts.scss";
+
+a {
+    text-decoration: none;
+}
+
+.activitiescard {
+    max-height: 450px;
+    &__info {
+        position: relative;
+        bottom: 82px;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-radius: 0 39px 0 39px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        background-color: variables.$brand-color;
+        opacity: 80%;
+    }
+}

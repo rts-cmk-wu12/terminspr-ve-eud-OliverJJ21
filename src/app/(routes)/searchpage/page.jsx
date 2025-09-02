@@ -1,7 +1,13 @@
-export default function SearchPage(){
+import DrawerMenu from "@/components/drawer-menu";
+import SearchBar from "@/components/search-bar";
+
+
+export default function SearchPage() {
+
     return (
         <>
-        <h1>Søg</h1>
+            <SearchBar />
+            <DrawerMenu />
         </>
     )
 }

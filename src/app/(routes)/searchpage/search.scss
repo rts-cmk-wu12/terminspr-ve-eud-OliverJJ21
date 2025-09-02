@@ -1,0 +1,54 @@
+@use "../../../variables";
+@use "../../../fonts";
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: variables.$background-color;
+}
+
+.search-container {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    .search__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 400;
+            color: variables.$foreground-background-color;
+        }
+
+        .search-container__searchbox {
+            display: flex;
+            align-items: center;
+
+            input {
+                background-color: #7d5b75;
+                border: none;
+                color: white;
+                padding-top: 1rem;
+                padding-right: 8rem;
+                padding-bottom: 1rem;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .search-bg {
+                background-color: #7d5b75;
+                padding: 0.62rem;
+                .search-icon {
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

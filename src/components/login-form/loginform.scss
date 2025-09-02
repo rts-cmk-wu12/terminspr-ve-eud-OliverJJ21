@@ -39,6 +39,12 @@
                 color: #9e9e9e;
             }
         }
+
+        .error{
+            font-family: "Ubuntu", sans-serif;
+            animation: slideIn 0.5s;
+            color: rgb(203, 20, 20);
+        }
     }
 
     &__btn {
