@@ -5,7 +5,7 @@ import '../login-form/loginform.scss'
 import LoginValidation from '@/actions/loginvalidation';
 
 export default function Login() {
-    const [formState, formAction, isPending] = useActionState(LoginValidation);
+    const [formState, formAction] = useActionState(LoginValidation);
 
     return (
         <>

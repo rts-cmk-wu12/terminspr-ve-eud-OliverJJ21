@@ -1,0 +1,14 @@
+@use '../../../variables';
+@use '../../../fonts';
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: variables.$background-color;
+    padding: 1rem;
+}
+
+h1{
+    font-weight: 300;
+    color: variables.$foreground-background-color;
+    margin-bottom: 1rem;
+}

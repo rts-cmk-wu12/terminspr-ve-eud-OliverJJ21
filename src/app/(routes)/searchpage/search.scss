@@ -17,6 +17,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        margin-bottom: 3rem;
 
         h1 {
             font-size: 36px;
@@ -47,6 +48,14 @@ body {
                 .search-icon {
                     font-size: 24px;
                     color: white;
+                }
+            }
+        }
+
+        .search-results{
+            .result-item{
+                img{
+                    border-radius: 39px;
                 }
             }
         }

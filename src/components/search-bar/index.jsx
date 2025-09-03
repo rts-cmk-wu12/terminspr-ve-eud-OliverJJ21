@@ -45,7 +45,7 @@ export default function Search() {
   }, [searchQuery]);
 
   const handleActivityClick = (id) => {
-    router.push(`/detail/${id}`);
+    router.push(`/activitiespage/${id}`);
   };
 
   return (
@@ -58,16 +58,12 @@ export default function Search() {
               className="search-input"
               type="text"
               value={searchQuery}
-              onChange={(event) => setSearchQuery(event.target.value)}
-
-            />
+              onChange={(event) => setSearchQuery(event.target.value)}/>
             <div className="search-bg">
 
               <IoSearch className="search-icon" />
             </div>
           </div>
-
-
           <div className="search-results">
             {searchResults.map((activity) => (
               <div
