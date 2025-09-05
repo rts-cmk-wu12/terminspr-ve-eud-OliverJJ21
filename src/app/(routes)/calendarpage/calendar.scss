@@ -1,14 +1,53 @@
-@use '../../../variables';
-@use '../../../fonts';
+@use "../../../variables";
+@use "../../../fonts";
 
-body{
+body {
     font-family: "Ubuntu", sans-serif;
     background-color: variables.$background-color;
     padding: 1rem;
 }
 
-h1{
+h1 {
     font-weight: 300;
     color: variables.$foreground-background-color;
     margin-bottom: 1rem;
+}
+
+.calendar-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .errormessage {
+        color: red;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    &__info {
+        li {
+            background-color: variables.$foreground-background-color;
+            border-radius: 11px;
+            padding: 1.8rem 1rem;
+            display: flex;
+            margin-bottom: 1.5rem;
+            flex-direction: column;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 200;
+            }
+
+            .calendar-card__info-holder {
+                display: flex;
+                gap: 0.5rem;
+                font-size: 18px;
+
+                .weekday{
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
 }
